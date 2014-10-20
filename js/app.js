@@ -12,7 +12,8 @@
 			'three/controls/OrbitControls' : 'vendor/three/controls/OrbitControls',
 			'three/controls/TrackballControls' : 'vendor/three/controls/TrackballControls',
 			'three/stats' : 'vendor/three/stats.min',
-			'three/RingGeometry2' : 'vendor/three/RingGeometry2'
+			'three/RingGeometry2' : 'vendor/three/RingGeometry2',
+			'prefixfree' : 'vendor/prefixfree.min'
 		},
 		shim: {
 			'three': {
@@ -47,8 +48,8 @@
 		
 	require([
 		'jquery',
-		'jsorrery/Main'
-	], function($, JSOrrery){
+		'odyssey/Main'
+	], function($, odyssey){
 		$(function(){
 
 			if(!window.WebGLRenderingContext){
@@ -57,8 +58,8 @@
 				return;
 			}
 
-			ns.app = JSOrrery.init();
+			ns.app = odyssey.init();
 		});
 	});
 	
-})(window.jsorrery = window.jsorrery || {});
+})(window.odyssey = window.odyssey || {});
