@@ -28,8 +28,8 @@ define(
 				'saturn',
 				'uranus',
 				'neptune',
-				'pluto',
-				'halley'
+				'pluto'
+				// ,'halley'
 			],
 			secondsPerTick : {min: 3600*5, max: 3600 * 25, initial:3600 * 10},
 			defaultGuiSettings : { 
