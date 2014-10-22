@@ -8,7 +8,7 @@
 		'use strict';
 		ns.app = null;
 		ns.name = 'orbit';
-		ns.version = '27-10-2014';
+		ns.version = '27/10/2014';
 
 		//gravitational constant to measure the force with masses in kg and radii in meters N(m/kg)^2
 		ns.G = 6.6742e-11;
@@ -25,7 +25,7 @@
 		ns.FT_TO_M = 0.3048;
 
 		//use physics or orbital elements to animate
-		ns.USE_PHYSICS_BY_DEFAULT = false;
+		ns.USE_PHYSICS_BY_DEFAULT = true;
 		
 		//duration in seconds
 		ns.DAY = 60 * 60 * 24;

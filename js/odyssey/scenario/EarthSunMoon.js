@@ -18,9 +18,9 @@ define(
 			name : 'EarthSunMoon',
 			title : 'The Sun, Earth and its Moon',
 			commonBodies : [
-				'sun',
 				'earth',
-				'moon'
+				'moon',
+				'sun'
 			],
 			bodies : {
 				moon : {

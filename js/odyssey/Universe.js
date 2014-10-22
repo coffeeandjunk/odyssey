@@ -47,7 +47,7 @@ define(
 
 				this.ticker = this.tick.bind(this);
 				
-				this.playing = false;
+				this.playing = true; //starts playing by default
 				this.epochTime = 0;
 
 				this.date = Gui.getDate() || new Date();
