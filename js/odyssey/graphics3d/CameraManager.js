@@ -11,13 +11,15 @@ define(
 		'odyssey/gui/ExportValues',
 		//'three/controls/TrackballControls',
 		'three/controls/OrbitControls',
-		'three'
+		'three/controls/LeapControls',
+		'three',
+		'leap'
 	], 
 	function(ns, $, OrbitLinesManager, TracerManager, Dimensions, Gui, ExportValues) {
 		'use strict';
 
-		var DEFAULT_FOV = 45;
-		var MAX_FOV = 360;
+		var DEFAULT_FOV = 25;
+		var MAX_FOV = 250;
 		var ORBITAL_CAMERA_TYPE = 'orbital';
 		var POV_CAMERA_TYPE = 'pov';
 
@@ -130,14 +132,32 @@ define(
 		var getNewCamera = function(isOrbital){
 			var cam = new THREE.PerspectiveCamera(cameraParams.fov, cameraParams.aspect, cameraParams.near, cameraParams.far);
 			cam.up = new THREE.Vector3(0,0,1);
+			// cam.position.z = 1000;
 
 			if(isOrbital){
-				var controls = new THREE.OrbitControls(cam, domEl.get(0));
+				var controllerLeap = new Leap.Controller();
+				controllerLeap.connect();
+				var controls = new THREE.LeapFlyControls( cam , controllerLeap);
+
+				// API
+				controls.rollSpeed        = .005;
+				controls.lookSpeed        = .018;
+				controls.movementSpeed    = .10;
+
+				controls.directionFactor  = .01;
+				controls.positionFactor   = .01;
+
+				controls.weakDampening    = .99;
+				controls.strongDampening  = .90;
+				controls.dampening        = controls.weakDampening;
+
+
+				// var controls = new THREE.OrbitControls(cam, domEl.get(0));
 				//set the controls as a property of the camera, but namespaced
 				cam.odyssey = cam.odyssey || {};
 				cam.odyssey.controls = controls;
-				controls.addEventListener('change', onControlsUpdate);
-				controls.center.set(0, 0, 0);
+				// controls.addEventListener('change', onControlsUpdate);
+				// controls.center.set(0, 0, 0);
 				controls.enabled = false;
 			}
 
@@ -225,6 +245,7 @@ define(
 			},
 
 			getCamera : function(){
+				// console.log('typeof viewSettings.lookFrom == undefined  : ', typeof viewSettings.lookFrom == 'undefined' );
 				if(typeof viewSettings.lookFrom == 'undefined') toggleCamera();
 				return currentCamera;
 			},

@@ -13,6 +13,7 @@
 			'three/controls/OrbitControls' : 'vendor/three/controls/OrbitControls',
 			'three/controls/TrackballControls' : 'vendor/three/controls/TrackballControls',
 			'three/controls/LeapTrackballControls' : 'vendor/three/controls/LeapTrackballControls',
+			'three/controls/LeapControls' : 'vendor/three/controls/LeapControls',
 			'three/stats' : 'vendor/three/stats.min',
 			'three/RingGeometry2' : 'vendor/three/RingGeometry2',
 			'prefixfree' : 'vendor/prefixfree.min'
@@ -44,6 +45,9 @@
 			},
 			'three/RingGeometry2' : {
 				deps: ['three']
+			},
+			'three/controls/LeapControls' : {
+				deps: ['leap', 'three']
 			}
 		}
 	});

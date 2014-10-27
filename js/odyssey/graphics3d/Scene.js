@@ -23,6 +23,7 @@ define(
 		var stats;
 		var renderer;
 
+
 		var drawBody = function(b){
 			b.drawMove();
 		};
@@ -131,7 +132,7 @@ define(
 
 				//center the milkyway to the camera position, to make it look infinite
 				this.milkyway && this.milkyway.setPosition(camPos);
-
+				CameraManager.getCamera().odyssey.controls.update();
 				renderer.render(this.root, CameraManager.getCamera());
 				this.screenshot && this.screenshot.capture();
 
