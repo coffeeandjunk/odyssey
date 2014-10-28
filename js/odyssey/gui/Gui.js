@@ -15,7 +15,7 @@ define(
 
 		var BTNS_LABELS = {
 			share : '&#59196;',
-			start : ['&#9654;', '&#8214;']
+			start : ['&#8214;', '&#9654;']
  		};
 
 		var removeElement = function(elId){
@@ -116,7 +116,7 @@ define(
 				}
 				var status = false;
 				var btn = elements[id] = $('<button id="'+id+'">'+labelOff+'</button>').appendTo(getContainer(id));
-				btn.on('click.orrery', function(e){
+				btn.on('click.odyssey', function(e){
 					e.stopPropagation();
 					callback();
 					status = !status;
@@ -133,7 +133,7 @@ define(
 				var dropdownContainer = getContainer(id).empty().addClass('dropdown');
 				var dropdownDisplay = $('<div class="display">').appendTo(dropdownContainer);
 				var selector = this.selects[id] = {
-					input : $('<input id="'+id+'_inp">').on('change.orrery', callback),
+					input : $('<input id="'+id+'_inp">').on('change.odyssey', callback),
 					display: dropdownDisplay,
 					list : $('<ul id="'+id+'">').appendTo(dropdownContainer),
 					options : {}
@@ -190,10 +190,10 @@ define(
 			addDate : function(onChange){
 				if(!dateDisplay) {
 					dateDisplay = $('<input>').appendTo(getContainer(this.DATE_ID));
-					/*dateDisplay.datepicker({
+					dateDisplay.datepicker({
 						dateFormat : $.datepicker.ATOM,
 						changeYear : true
-					});/**/
+					});
 				}
 				var curDate;
 				dateDisplay.off('change').on('change.odyssey', function(){
@@ -220,10 +220,11 @@ define(
 			setDate : function(d){
 				date = d;
 				if(d){
-					var dStr = d.toISOString();
+					// var dStr = d.toISOString();
+					var dStr = d.toString();
 					ExportValues.setVal(this.DATE_ID, dStr);
 					dateDisplay.val(dStr);
-					//dateDisplay.val($.datepicker.formatDate( $.datepicker.ATOM, d));
+					dateDisplay.val($.datepicker.formatDate( $.datepicker.ATOM, d));
 				}
 			},
 

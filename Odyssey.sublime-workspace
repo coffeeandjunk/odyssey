@@ -1,0 +1,562 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"back",
+				"background"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"top",
+				"margin-top"
+			],
+			[
+				"bot",
+				"bottom"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/SASS Build/SASS.sublime-build",
+	"command_palette":
+	{
+		"height": 58.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ns",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"ins	",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/Odyssey/js",
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/Odyssey/js/odyssey",
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/Odyssey/js/odyssey/graphics3d"
+	],
+	"file_history":
+	[
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/jsorrery/js/jsorrery/scenario/CommonCelestialBodies.js",
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/Odyssey/js/odyssey/scenario/CommonCelestialBodies.js",
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/jsorrery/js/jsorrery/scenario/InnerSolarSystem.js",
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/Odyssey/js/odyssey/scenario/InnerSolarSystem.js",
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/Odyssey/js/config.js",
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/Odyssey/index.html",
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/Odyssey/js/odyssey/scenario/MoonRealOrbit.js",
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/Odyssey/js/odyssey/scenario/MoonSOI.js",
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/Odyssey/css/master.css",
+		"/C/Users/Abhishek.penumbra/AppData/Roaming/Sublime Text 3/Packages/User/SublimeServer.sublime-settings",
+		"/C/wamp/www/coffeeandjunk.github.io/index.html",
+		"/C/wamp/www/Odyssey/README.md",
+		"/C/wamp/www/Odyssey/LICENSE.md",
+		"/C/wamp/www/Odyssey/js/odyssey/graphics3d/CameraManager.js",
+		"/C/wamp/www/Odyssey/js/odyssey/graphics3d/Scene.js",
+		"/C/wamp/www/Odyssey/css/master.less",
+		"/C/wamp/www/Odyssey/js/odyssey/graphics3d/Dimensions.js",
+		"/C/wamp/www/Odyssey/js/odyssey/NameSpace.js",
+		"/C/wamp/www/Odyssey/index.html",
+		"/C/wamp/www/Odyssey/js/odyssey/gui/Gui.js",
+		"/C/wamp/www/Odyssey/js/odyssey/scenario/EarthSunMoon.js",
+		"/C/wamp/www/Odyssey/js/odyssey/CelestialBody.js",
+		"/C/wamp/www/Solar System/index.html",
+		"/C/wamp/www/3D-CSS-Solar-System/css/styles.css",
+		"/C/wamp/www/Odyssey/js/odyssey/scenario/NearEarthObject.js",
+		"/C/wamp/www/Odyssey/js/odyssey/scenario/MoonSOI.js",
+		"/C/wamp/www/Odyssey/js/odyssey/scenario/MoonRealOrbit.js",
+		"/C/wamp/www/Odyssey/js/odyssey/scenario/InnerSolarSystem.js",
+		"/C/wamp/www/Odyssey/js/odyssey/scenario/EarthMoon.js",
+		"/C/wamp/www/Odyssey/js/odyssey/scenario/CommonCelestialBodies.js",
+		"/C/wamp/www/Odyssey/js/odyssey/graphics3d/Body3d.js",
+		"/C/wamp/www/Odyssey/js/odyssey/Main.js",
+		"/C/wamp/www/Odyssey/js/odyssey/scenario/ScenarioLoader.js",
+		"/C/wamp/www/Odyssey/js/odyssey/Universe.js",
+		"/C/wamp/www/Odyssey/js/odyssey/graphics3d/OrbitLine.js",
+		"/C/wamp/www/Odyssey/js/odyssey/graphics2d/Labels.js",
+		"/C/wamp/www/Odyssey/js/odyssey/Utils.js",
+		"/C/wamp/www/Odyssey/js/app.js",
+		"/C/wamp/www/Odyssey/js/odyssey/graphics3d/OrbitLinesManager.js",
+		"/C/Users/Abhishek.penumbra/Downloads/Leap-Three-Camera-Controls-master/controls/LeapTrackballControls.js",
+		"/C/Users/Abhishek.penumbra/Downloads/Leap-Three-Camera-Controls-master/examples/TrackballControls.html",
+		"/C/wamp/www/Odyssey/js/vendor/three/controls/OrbitControls.js",
+		"/C/wamp/www/Odyssey/js/vendor/three/controls/TrackballControls.js",
+		"/C/wamp/www/Odyssey/js/config.js",
+		"/C/wamp/www/Odyssey/js/require.js",
+		"/C/Users/Abhishek.penumbra/Downloads/Leap-Three-Camera-Controls-master/index.html",
+		"/C/Users/Abhishek.penumbra/Downloads/HexGL-master/libs/Detector.js",
+		"/C/wamp/www/Odyssey/js/odyssey/scenario/SolarSystem.js",
+		"/C/wamp/www/Odyssey/js/odyssey/algorithm/Gravity.js",
+		"/C/wamp/www/Odyssey/js/odyssey/algorithm/MoveAlgorithm.js",
+		"/C/wamp/www/Odyssey/shaders/stars.fsh",
+		"/C/wamp/www/Odyssey/shaders/stars.vsh",
+		"/C/Users/Abhishek.penumbra/Downloads/Leap-Three-Camera-Controls-master/lib/OBJLoader.js",
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/3D-CSS-Solar-System/css/transitions.scss",
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/3D-CSS-Solar-System/css/styles.scss",
+		"/C/wamp/www/Odyssey/js/odyssey/graphics3d/loaders/ResourceLoader.js",
+		"/C/wamp/www/Odyssey/js/odyssey/helpers/Math.js",
+		"/C/wamp/www/Odyssey/js/odyssey/scenario/EarthSun.js",
+		"/C/wamp/www/Odyssey/js/odyssey/gui/Sharer.js",
+		"/C/wamp/www/Odyssey/js/odyssey/scenario/SunEarthMoon.js",
+		"/C/wamp/www/Odyssey/css/master.css",
+		"/C/Users/Abhishek.penumbra/AppData/Roaming/Sublime Text 3/Packages/Less2Css/README.md",
+		"/C/Users/Abhishek.penumbra/AppData/Roaming/Sublime Text 3/Packages/Less2Css/less2css.sublime-settings",
+		"/C/Users/Abhishek.penumbra/AppData/Roaming/Sublime Text 3/Packages/LESS/README.md",
+		"/C/wamp/www/Odyssey/js/odyssey/algorithm/OrbitalElements.js",
+		"/C/wamp/www/Odyssey/js/odyssey/algorithm/Quadratic.js",
+		"/C/wamp/www/Odyssey/js/odyssey/algorithm/RungeKutta.js",
+		"/C/wamp/www/Odyssey/js/odyssey/algorithm/Ticker.js",
+		"/C/wamp/www/Odyssey/js/odyssey/algorithm/Verlet.js",
+		"/C/wamp/www/Odyssey/js/odyssey/graphics3d/BodyOrbit.js",
+		"/C/wamp/www/Odyssey/js/odyssey/graphics3d/DebugPoint.js",
+		"/C/wamp/www/Odyssey/js/odyssey/graphics3d/MilkyWayParticles.js",
+		"/C/wamp/www/Odyssey/js/odyssey/graphics3d/Screenshot.js",
+		"/C/wamp/www/Odyssey/js/odyssey/graphics3d/Sun.js",
+		"/C/wamp/www/Odyssey/js/odyssey/graphics3d/Tracer.js",
+		"/C/wamp/www/Odyssey/js/odyssey/graphics3d/TracerManager.js",
+		"/C/wamp/www/Odyssey/js/odyssey/scenario/Apollo.js",
+		"/C/wamp/www/Odyssey/js/odyssey/scenario/ArtificialSatellites.js",
+		"/C/wamp/www/Odyssey/js/odyssey/scenario/BigJupiter.js",
+		"/C/wamp/www/Odyssey/js/odyssey/scenario/JupiterMoon.js",
+		"/C/wamp/www/Odyssey/js/odyssey/scenario/NasaNumbers.js",
+		"/C/wamp/www/Odyssey/js/odyssey/scenario/SaturnMoon.js",
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/jsorrery/index.html",
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/index.php",
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/Odyssey/css/styles.css",
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/Odyssey/js/app.js",
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/jsorrery/js/app.build.js",
+		"/C/Users/Abhishek.penumbra/Downloads/Circulate/index.html",
+		"/C/Users/Abhishek.penumbra/Downloads/kepler-master/kepler-master/index.html",
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/jsorrery/js/jsorrery/algorithm/OrbitalElements.js",
+		"/C/Users/Abhishek.penumbra/Downloads/Circulate/css/style.css",
+		"/C/Users/Abhishek.penumbra/AppData/Local/Temp/Rar$DIa0.298/example.js",
+		"/C/Users/Abhishek.penumbra/Downloads/kepler-master/kepler-master/app/kepler.js",
+		"/C/Users/Abhishek.penumbra/Downloads/physics-master/js/ellipticalOrbit.js",
+		"/C/Users/Abhishek.penumbra/Downloads/kepler-master/kepler-master/lib/stats.js",
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/jsorrery/js/jsorrery/Main.js",
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/jsorrery/js/jsorrery/Universe.js",
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/Odyssey/css/views.scss",
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/jsorrery/js/jsorrery/graphics3d/Body3d.js",
+		"/C/Users/Abhishek.penumbra/AppData/Local/Temp/Rar$DIa0.833/kepler.js",
+		"/C/Users/ABHISH~1.PEN/AppData/Local/Temp/Rar$DRa0.922/kepler-master/index.html",
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/jsorrery/js/vendor/three/controls/OrbitControls.js",
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/jsorrery/css/master.less",
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/jsorrery/js/jsorrery/CelestialBody.js",
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/jsorrery/js/require.js",
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/jsorrery/js/config.js",
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/jsorrery/js/app.js",
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/Odyssey/css/styles.scss",
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/Odyssey/js/vendor/three.min.js",
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/Odyssey/css/styles-production",
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/Odyssey/js/vendor/pacer.min.js",
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/Odyssey/css/vendor/pace.css",
+		"/C/Users/Abhishek.penumbra/Downloads/Three.leapControls-gh-pages/LeapControls.js",
+		"/C/Users/Abhishek.penumbra/AppData/Local/Temp/Rar$DIa0.232/launch.js",
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/Odyssey/js/LeapControls.js",
+		"/C/Users/Abhishek.penumbra/AppData/Local/Temp/Rar$DIa0.347/DAT.GUI.min.js",
+		"/C/Users/Abhishek.penumbra/AppData/Local/Temp/Rar$DIa0.215/Detector.js",
+		"/C/Users/Abhishek.penumbra/Downloads/outerspace-gh-pages/lib/leap.js",
+		"/C/Users/Abhishek.penumbra/Downloads/outerspace-gh-pages/lib/Detector.js",
+		"/C/Users/Abhishek.penumbra/Documents/LeapTest/Index.html",
+		"/C/Users/Abhishek.penumbra/Documents/LeapTest/js/leap.js",
+		"/C/Users/Abhishek.penumbra/Documents/LeapTest/css/style.css",
+		"/C/Users/Abhishek.penumbra/Documents/LeapTest/js/app.js",
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/jsorrery/css/master.css",
+		"/C/Users/Abhishek.penumbra/Documents/GitHub/3D-CSS-Solar-System/css/lighting.scss",
+		"/C/Users/Abhishek.penumbra/Documents/LeapTest/app.js",
+		"/C/Users/Abhishek.penumbra/Documents/app.js",
+		"/C/Users/Abhishek.penumbra/Documents/LeapTest.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"C:\\wamp\\www\\Odyssey",
+			"C:\\Users\\Abhishek.penumbra\\Documents\\GitHub\\Odyssey"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Progress",
+			"Services",
+			"jsOrrery",
+			"slider",
+			"scale",
+			"color",
+			"startLabel",
+			"startCont",
+			"this.play",
+			"@widgetBorderCol",
+			"nav",
+			"system",
+			"free camera",
+			".button",
+			".button()",
+			"system",
+			"System",
+			"animate();",
+			"PerspectiveCamera",
+			"function init",
+			"OrbitControls",
+			"trackballcontrols",
+			"THREE.Scene()",
+			".planetLab",
+			"scale",
+			"setScale",
+			"planetScale",
+			"PLANET_SCALE_ID",
+			"planetScale",
+			"PLANET_SCALE_ID",
+			"planetScale",
+			"Look at",
+			"scenario",
+			"stats",
+			"#stats",
+			"sunflare",
+			"body",
+			"onmousedown",
+			"disableclick",
+			"document.onmousedown=disableclick",
+			"jsorrery",
+			"www",
+			"c:",
+			"c:/",
+			"gui",
+			"zoom-con",
+			"styles",
+			".quote",
+			"DEDEDE",
+			"                    </",
+			".nav-tabs",
+			"	.",
+			".nav-tabs",
+			"nav-tabs",
+			"header",
+			"nav",
+			" !important",
+			"nina-sabnani",
+			"clearfix",
+			"nav",
+			" brand",
+			"font",
+			".main h2:first-child",
+			"span1",
+			"span3",
+			"col-100",
+			"col-600",
+			"col-100",
+			"col-600",
+			"col-100",
+			"col-460",
+			"col-240",
+			"col-600",
+			"col-100",
+			"col-460",
+			"col-100",
+			"col-460",
+			"col-240",
+			".main p",
+			"img",
+			"col-360",
+			"col-340",
+			"col-360",
+			"col-340",
+			"box",
+			"col-600",
+			"col-100",
+			"max-width",
+			"span4",
+			"col-360",
+			"col-340",
+			"span",
+			"col-600",
+			"col-100",
+			"col-360",
+			"col-340",
+			"box",
+			"span",
+			".box",
+			"box",
+			"image",
+			"margin",
+			"padding: ",
+			".nav",
+			"nav-tab",
+			"<div>",
+			"row-flu",
+			".nav",
+			"element",
+			"elemen",
+			".main",
+			"h2",
+			".conten",
+			"conten",
+			"nav",
+			"nav a:hover",
+			"a:hover",
+			".nav > li > a:hover, .nav > li > a:focus",
+			"content",
+			"foot",
+			"main",
+			"footer",
+			"nina",
+			"width",
+			"nina",
+			"@media",
+			"med",
+			"h3"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Odyssey",
+			"odyssey",
+			"span2",
+			"span1",
+			"span3",
+			"span8",
+			"span3",
+			"span8",
+			"span3",
+			"span8",
+			"span3",
+			"span9",
+			"span1",
+			"span9",
+			"span1",
+			"span6",
+			"span4",
+			"span6",
+			"img class= \"picture\"",
+			"span6",
+			"span5",
+			"span6",
+			"span5",
+			"box row-fluid",
+			"span9",
+			"span1",
+			"span5",
+			"span4",
+			"span5",
+			"span8",
+			"span3",
+			"span6",
+			"span5",
+			"box row-fluid"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 118.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "Odyssey.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"common",
+				"js\\odyssey\\scenario\\CommonCelestialBodies.js"
+			],
+			[
+				"inner",
+				"js\\odyssey\\scenario\\InnerSolarSystem.js"
+			],
+			[
+				"moon",
+				"js\\odyssey\\scenario\\MoonRealOrbit.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
