@@ -37,6 +37,7 @@ define(
 					this.playing = !this.playing;
 				}.bind(this));
 
+				//Stops playing when date is changed
 				this.dateDisplay = Gui.addDate(function(){
 					this.playing = false;
 					this.epochTime = 0;
@@ -47,7 +48,7 @@ define(
 
 				this.ticker = this.tick.bind(this);
 				
-				this.playing = true; //starts playing by default
+				this.playing = false; //starts playing by default if true
 				this.epochTime = 0;
 
 				this.date = Gui.getDate() || new Date();

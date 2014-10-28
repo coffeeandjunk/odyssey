@@ -15,7 +15,7 @@ define(
 
 		var BTNS_LABELS = {
 			share : '&#59196;',
-			start : ['&#8214;', '&#9654;']
+			start : ['&#9654;', '&#8214;']
  		};
 
 		var removeElement = function(elId){
