@@ -5,6 +5,12 @@
  * @author WestLangley / http://github.com/WestLangley
  */
 
+ define([
+	 'three/controls/leap.jquery'
+ 	]),
+
+
+
 THREE.OrbitControls = function ( object, domElement ) {
 
 	this.object = object;
@@ -119,14 +125,17 @@ THREE.OrbitControls = function ( object, domElement ) {
 	};
 
 	this.zoomIn = function ( zoomScale ) {
-
+		console.log('zoomIn called');
 		if ( zoomScale === undefined ) {
 
 			zoomScale = getZoomScale();
 
 		}
 
-		scale /= zoomScale;
+		scale =1.0526315789473684;
+		// scale /= zoomScale;
+
+		console.log(scale, zoomScale);
 
 	};
 
@@ -306,7 +315,7 @@ THREE.OrbitControls = function ( object, domElement ) {
 	}
 
 	function onMouseWheel( event ) {
-
+		console.log('event:::: ', event);
 		if ( scope.enabled === false ) return;
 		if ( scope.userZoom === false ) return;
 
@@ -362,6 +371,62 @@ THREE.OrbitControls = function ( object, domElement ) {
 	this.domElement.addEventListener( 'mousewheel', onMouseWheel, false );
 	this.domElement.addEventListener( 'DOMMouseScroll', onMouseWheel, false ); // firefox
 	this.domElement.addEventListener( 'keydown', onKeyDown, false );
+
+	/* code for leap */
+
+	//set the leap data for other functions to access
+	// $().leap("setEvent","onFrame", function(){
+	// 	scope.leapData = window.leapData;
+	// 	if(leapData.numHands > 1 && leapData.numPointables > 7) {
+
+	// 	}	
+	// 	});
+
+	// $(document).ready(function() {
+
+		 var onGrabHandler = function(hand) {
+		 								console.log('grab called');
+                    scope.zoomIn();
+                    // $(this.domElement).trigger('onMouseWheel',{'wheelDelta': 10})
+                }; 
+
+		// TODO remove hard coded id for the canvas element
+		 $().leap("setEvent","onGrab", function(hand){ $('#universe').trigger('leapEventOnGrab', [hand]) });
+
+		$(this.domElement).on('leapEventOnGrab', function(hand){	
+			onGrabHandler(hand) });
+
+
+		// onHandEnter
+
+				 var onPointerChangehandler = function() {
+				 								var leapData = window.leapData;
+				 								console.log('hand called, ', leapData);
+				 								
+				 									if(leapData.numHands > 0 && leapData.numPointables >0){
+		                    		scope.zoomOut();
+		                    	}
+		                    // $(this.domElement).trigger('onMouseWheel',{'wheelDelta': 10})
+		                }; 
+				               
+				$(this.domElement).leap("setEvent","onPointerChange", function (hand){ 
+					
+					$('#universe').trigger('leapEventonPointerChange',['test string', hand])		
+					});
+				$('#universe').on('leapEventonPointerChange', function(dummy, e, hand){	
+					onPointerChangehandler() });
+
+
+
+
+		// $(this.domElement).on('leapEvent', function(hand){ onGrab(hand) });
+		// $().leap("setEvent","onGrab", function(hand){ $(this.domElement).trigger('leapEvent', hand) });
+
+
+
+
+
+	// });
 
 };
 
