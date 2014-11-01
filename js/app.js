@@ -12,7 +12,7 @@
 			'ui' : 'vendor/jquery-ui-1.10.3.custom.min',
 			'three/controls/OrbitControls' : 'vendor/three/controls/OrbitControls',
 			'three/controls/TrackballControls' : 'vendor/three/controls/TrackballControls',
-			'three/controls/leap.jquery' : 'vendor/three/controls/leap.jquery',
+			'three/controls/LeapTrackballControls' : 'vendor/three/controls/LeapTrackballControls',
 			'three/stats' : 'vendor/three/stats.min',
 			'three/RingGeometry2' : 'vendor/three/RingGeometry2',
 			'prefixfree' : 'vendor/prefixfree.min'
