@@ -15,6 +15,7 @@ define(
 		// ,'odyssey/scenario/NearEarthObject'
 		// ,'odyssey/scenario/BigJupiter'
 		//,'odyssey/scenario/MoonSOI'
+		,'odyssey/scenario/ScaledPlanets'
 	],
 	function($, ns, common){
 
