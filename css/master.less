@@ -181,8 +181,11 @@ a{
 	a{
 		color:white;
 		text-decoration:none;
+		cursor: pointer;
 	}
 }
+
+.ui-datepicker-next {float: right;}
 
 .ui-slider{
 	border-bottom:1px @inputBorderCol solid;
@@ -240,6 +243,12 @@ nav{
 		.inputContainer{
 			position:relative;
 			min-height: 20px;
+
+			.hasDatepicker{
+				border-radius: 3px;
+				border: 1px #666 solid;
+				padding: 3px;
+			}
 		}
 
 

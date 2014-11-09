@@ -15,8 +15,8 @@ define(
 	function(ns, common) {
 
 		var cnf = {
-			name : 'BigJupiter',
-			title : 'If Jupiter was 1000X its mass',
+			name : 'BigEarth',
+			title : 'If Earth was 10000X its mass',
 			commonBodies : [
 				'sun',
 				'mercury',
@@ -35,11 +35,6 @@ define(
 					forceTrace: true,
 					traceRelativeTo : 'universe'
 				},
-				jupiter:{
-					mass: 5.6846e26 * 1000,
-					forceTrace: true,
-					traceRelativeTo : 'universe'
-				},
 				mercury:{
 					forceTrace: true,
 					traceRelativeTo : 'universe'
@@ -49,10 +44,16 @@ define(
 					traceRelativeTo : 'universe'
 				},
 				earth:{
+					mass: 5.9736e24 * 10000,
 					forceTrace: true,
 					traceRelativeTo : 'universe'
 				},
 				mars:{
+					forceTrace: true,
+					traceRelativeTo : 'universe'
+				},
+				jupiter:{
+					// mass: 5.6846e26 * 1000,
 					forceTrace: true,
 					traceRelativeTo : 'universe'
 				},
@@ -81,7 +82,7 @@ define(
 			defaultGuiSettings : { 
 				planetScale : 10
 			},
-			help : "This scenario shows what would happen if, instantaneously at this moment, Jupiter's mass grew 1000 times larger."
+			help : "This scenario shows what would happen if, instantaneously at this moment, Earth's mass grew 1000 times larger."
 		};
 
 		return cnf;
