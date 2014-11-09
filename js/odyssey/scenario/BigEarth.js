@@ -53,7 +53,6 @@ define(
 					traceRelativeTo : 'universe'
 				},
 				jupiter:{
-					// mass: 5.6846e26 * 1000,
 					forceTrace: true,
 					traceRelativeTo : 'universe'
 				},
@@ -78,9 +77,9 @@ define(
 			calculaionsPerTick : 100,
 			usePhysics: true,
 			calculateAll : true,
-			useBarycenter : false,
+			useBarycenter : true,
 			defaultGuiSettings : { 
-				planetScale : 10
+				planetScale : 100
 			},
 			help : "This scenario shows what would happen if, instantaneously at this moment, Earth's mass grew 1000 times larger."
 		};

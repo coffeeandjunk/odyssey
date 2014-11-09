@@ -33,7 +33,8 @@ define(
 			],
 			secondsPerTick : {min: 3600*5, max: 3600 * 25, initial:3600 * 10},
 			defaultGuiSettings : { 
-				planetScale : 100
+				planetScale : 1,
+				usePhysics: true
 			},
 			help : "This scenario shows all the planets of the Solar System."
 		};
