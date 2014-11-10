@@ -46,11 +46,11 @@ define(
 				var light = new THREE.AmbientLight( 0x202020 );
 				this.root.add( light );/**/
 
-				//disable while not using stats
-				if(!stats) {
-					stats = new Stats();
-					$('body').append( stats.domElement );
-				}
+				//disable while not showing stats
+				// if(!stats) {
+				// 	stats = new Stats();
+				// 	$('body').append( stats.domElement );
+				// }
 
 				this.container.append(renderer.domElement);
 				
@@ -143,7 +143,7 @@ define(
 				camPos.applyMatrix4(CameraManager.getCamera().matrixWorld);
 				Labels.draw(camPos, radFov);
 				/**/
-				stats.update();
+				// stats.update();
 			},
 
 			//camera might move and/or look at a different point depending on bodies movements

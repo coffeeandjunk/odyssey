@@ -15,8 +15,8 @@ define(
   function(ns, common) {
 
     var cnf = {
-      name : 'Scaled Planets',
-      title : 'Planets scaled to 3000 times',
+      name : 'ScaledPlanets',
+      title : 'Planets (except Sun) scaled 3000 times',
       commonBodies : [
         'sun',
         'mercury',
@@ -33,13 +33,8 @@ define(
       bodies:{
         sun : {
           forceTrace: true,
-          traceRelativeTo : 'universe'
-        },
-        jupiter:{
-          mass: 5.6846e26,
-          forceTrace: true,
           traceRelativeTo : 'universe',
-          radius: 71492 * 3000
+          radius : 6.96342e5
         },
         mercury:{
           forceTrace: true,
@@ -60,6 +55,12 @@ define(
           forceTrace: true,
           traceRelativeTo : 'universe',
           radius: 3376 * 3000
+        },
+        jupiter:{
+          mass: 5.6846e26,
+          forceTrace: true,
+          traceRelativeTo : 'universe',
+          radius: 71492 * 3000
         },
         saturn:{
           forceTrace: true,
