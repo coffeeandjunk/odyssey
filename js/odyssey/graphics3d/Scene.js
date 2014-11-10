@@ -37,7 +37,8 @@ define(
 
 				renderer = renderer || new THREE.WebGLRenderer({antialias: true, preserveDrawingBuffer: true});
 
-				if(ns.capture) this.screenshot = Object.create(Screenshot).init(renderer);
+				// Hamre kaam ka nahi
+				// if(ns.capture) this.screenshot = Object.create(Screenshot).init(renderer);
 
 				//renderer.shadowMapEnabled = true;
 				renderer.setSize(this.width, this.height);
@@ -45,6 +46,7 @@ define(
 				var light = new THREE.AmbientLight( 0x202020 );
 				this.root.add( light );/**/
 
+				//disable while not using stats
 				if(!stats) {
 					stats = new Stats();
 					$('body').append( stats.domElement );
@@ -53,12 +55,12 @@ define(
 				this.container.append(renderer.domElement);
 				
 				//planet scale
-				Gui.addSlider(Gui.PLANET_SCALE_ID, null, function(val){
-					_.each(this.bodies3d, function(body3d){
-						body3d.setScale(val);
-					});
-					this.draw();
-				}.bind(this));
+				// Gui.addSlider(Gui.PLANET_SCALE_ID, null, function(val){
+				// 	_.each(this.bodies3d, function(body3d){
+				// 		body3d.setScale(val);
+				// 	});
+				// 	this.draw();
+				// }.bind(this));
 
 				//this.drawAxis();
 				CameraManager.init(this, this.width/this.height, scenario.fov, this.stageSize, this.container);
@@ -91,14 +93,14 @@ define(
 
 			},
 
-			/*
+			
 			drawAxis : function(){
 				var object = new THREE.AxisHelper(this.stageSize/10);
 			 	object.position.x = 0;//r
 			 	object.position.y = 0;//g
 			 	object.position.z = 0;//b
 			  	this.root.add( object );
-			},/**/
+			},
 
 			setDimension : function(largestSMA, smallestSMA, largestRadius) {
 				this.width = $(window).width();

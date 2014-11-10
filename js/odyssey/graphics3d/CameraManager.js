@@ -9,6 +9,7 @@ define(
 		'odyssey/graphics3d/Dimensions',
 		'odyssey/gui/Gui',
 		'odyssey/gui/ExportValues',
+		//'three/controls/TrackballControls',
 		'three/controls/OrbitControls',
 		'three'
 	], 
@@ -16,7 +17,7 @@ define(
 		'use strict';
 
 		var DEFAULT_FOV = 45;
-		var MAX_FOV = 90;
+		var MAX_FOV = 360;
 		var ORBITAL_CAMERA_TYPE = 'orbital';
 		var POV_CAMERA_TYPE = 'pov';
 
@@ -174,15 +175,15 @@ define(
 					at : Gui.addDropdown(Gui.LOOKAT_ID, toggleCamera)
 				};
 				
-				Gui.addOption(Gui.LOOKFROM_ID, 'Free camera', 'orbital');
-				Gui.addOption(Gui.LOOKAT_ID, 'System', 'universe');
+				Gui.addOption(Gui.LOOKFROM_ID, 'Free Movement', 'orbital');
+				Gui.addOption(Gui.LOOKAT_ID, 'Solar System', 'universe');
 
-				if(ns.U.getBody().name == 'sun') {
-					Gui.addOption(Gui.LOOKAT_ID, 'Night (away from the sun)', 'night');
-				}
+				// if(ns.U.getBody().name == 'sun') {
+				// 	Gui.addOption(Gui.LOOKAT_ID, 'Night (away from the sun)', 'night');
+				// }
 				
-				Gui.addOption(Gui.LOOKAT_ID, 'Direction of velocity', 'front');
-				Gui.addOption(Gui.LOOKAT_ID, 'Inverse direction of velocity', 'back');
+				// Gui.addOption(Gui.LOOKAT_ID, 'Direction of velocity', 'front');
+				// Gui.addOption(Gui.LOOKAT_ID, 'Inverse direction of velocity', 'back');
 
 			},
 

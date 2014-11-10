@@ -33,9 +33,10 @@ define(
 			],
 			secondsPerTick : {min: 3600*5, max: 3600 * 25, initial:3600 * 10},
 			defaultGuiSettings : { 
-				planetScale : 10
+				planetScale : 1,
+				usePhysics: true
 			},
-			help : "This scenario shows all the planets of the Solar System. Also included is Halley's comet, but its orbit is an approximation, as it is perturbed by the planet's masses."
+			help : "This scenario shows all the planets of the Solar System."
 		};
 
 		return cnf;

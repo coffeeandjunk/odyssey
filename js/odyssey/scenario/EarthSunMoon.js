@@ -1,11 +1,4 @@
-/** 
 
-mass : kg
-dist : km
-apeed : km/s
-radius: km
-
-*/
 
 define(
 	[
@@ -13,28 +6,19 @@ define(
 		'odyssey/scenario/CommonCelestialBodies'
 	], 
 	function(ns, common) {
-
-		var cnf = {
+		
+		var system =  {
 			name : 'EarthSunMoon',
-			title : 'The Sun, Earth and its Moon',
-			commonBodies : [
-				'sun',
-				'earth',
-				'moon'
-			],
-			bodies : {
-				moon : {
-					calculateFromElements : true
-				}
+			title : 'The Sun, Moon and the Earth',
+			commonBodies : ['sun','earth', 'moon'],
+			secondsPerTick : {min: 3600/2, max: 3600 * 5, initial:3600},
+						defaultGuiSettings : { 
+				planetScale : 1
 			},
-			secondsPerTick : {min: 3600, max: 3600 * 15, initial:3600 * 5},//3600 * 24 * 2,
-			defaultGuiSettings : { 
-				planetScale : 10
-			},
-			help:"Includes only the Sun, the Earth and its Moon"
+			help : "The Sun, Earth and its moon."
 		};
 
-		return cnf;
+		return system;
 		
 	}
 );

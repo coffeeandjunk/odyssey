@@ -5,12 +5,14 @@
 		baseUrl: './js/',
 		paths:{
 			'jquery' : 'vendor/jquery.min',
+			'leap' : 'vendor/leap-0.6.3.min',
 			'vendor/jquery.scrollto' : 'vendor/jquery.scrollTo-1.4.2-min',
 			'three' : 'vendor/three.min',
 			'_' : 'vendor/underscore-min',
 			'ui' : 'vendor/jquery-ui-1.10.3.custom.min',
 			'three/controls/OrbitControls' : 'vendor/three/controls/OrbitControls',
 			'three/controls/TrackballControls' : 'vendor/three/controls/TrackballControls',
+			'three/controls/LeapTrackballControls' : 'vendor/three/controls/LeapTrackballControls',
 			'three/stats' : 'vendor/three/stats.min',
 			'three/RingGeometry2' : 'vendor/three/RingGeometry2',
 			'prefixfree' : 'vendor/prefixfree.min'
