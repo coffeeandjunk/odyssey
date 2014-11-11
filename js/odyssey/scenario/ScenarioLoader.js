@@ -16,6 +16,7 @@ define(
 		,'odyssey/scenario/BigEarth'
 		//,'odyssey/scenario/MoonSOI'
 		,'odyssey/scenario/ScaledPlanets'
+		,'odyssey/scenario/ScaledDistance'
 	],
 	function($, ns, common){
 
