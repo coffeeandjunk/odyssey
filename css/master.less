@@ -272,7 +272,7 @@ a{
 				padding:0;
 				font-weight:normal;
 				position:absolute;
-				// display:none;
+				display:none;
 				z-index:1000;
 				.no-select;
 
@@ -350,55 +350,89 @@ a{
 
 // }
 
-.display {display: none !important;}
+
+#lookFrom {
+	.scale(0);
+  	.transition(all 0.4s ease-out);
+}
+
+.open#lookFrom {
+  	opacity: 1;
+  	.scale(1);
+}
 
 #menu {
-	opacity: 0.3;
 
-	ul{
-	list-style-type:none;
-	margin-top:10px;
-	padding:0;
-	font-weight:normal;
-	position:absolute;
-	// display:none;
-	z-index:1000;
-	.no-select;
+	.inputContainer{
+			position:relative;
+			min-height: 20px;
 
-		li{
-			padding: 6px 8px;
-			.border-radius(3px);
-			//border-bottom: 1px black solid;
-			white-space: nowrap;
-			.inputBox(@selectActiveBg);
-			margin-top: 5px;
-			margin-right: 8px;
-			cursor: pointer;
-			.no-select;
-
-			&.selected{
-				.inputBox();
-			}
-
-			&:hover, &.selected{
-				// font-weight:bold;
-				color:#999;
-				opacity: 1;
-				.transition-duration(0.5s);
-			}
-
-			&.disabled{
-				font-weight:normal;
-				color:@txCol;
-				opacity:0.4;
+			.hasDatepicker{
+				.border-radius(3px);
+				border: 1px #222 solid;
+				padding: 3px;
 			}
 		}
 
-	}
+		.dropdown{
+
+
+			.display, li{
+				cursor:pointer;
+				overflow:hidden;
+				.border-radius(3px);
+				border: 1px #222 solid;
+				padding: 6px 8px;
+				margin-top: 5px;
+				.no-select;
+			}
+			
+
+			ul{
+				list-style-type:none;
+				margin-top:10px;
+				padding:0;
+				font-weight:normal;
+				position:absolute;
+				display:none;
+				z-index:1000;
+				.no-select;
+
+				li{
+					//border-bottom: 1px black solid;
+					white-space: nowrap;
+					.inputBox(@selectActiveBg);
+					display: block;
+					// margin-top: 5px;
+					margin-right: 8px;
+
+					&.selected{
+						.inputBox();
+					}
+
+					&:hover, &.selected{
+						// font-weight:bold;
+						color:#999;
+					}
+
+					&.disabled{
+						font-weight:normal;
+						color:@txCol;
+						opacity:0.4;
+					}
+				}
+			}
+
+			&:hover{
+				ul{
+					display:block;
+				}
+			}
+		}
 
 	#povLabel, #lookatLabel {
 		position: absolute;
-		top: 15%;
+		top: 35%;
 	}
 
 	#povLabel {
@@ -412,12 +446,16 @@ a{
 	#scenarioLabel {
 		position: absolute;
 		left: 20px;
-		bottom: 40px;
+		bottom: 60px;
 	}
 
 	#scenarioLabel li {
 		display: inline;
 		margin-right: 10px;
+	}
+
+	#scenario {
+		margin-top: 20px;
 	}
 }
 	

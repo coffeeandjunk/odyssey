@@ -126,6 +126,23 @@ define(
 				scenarioHelpContainer.append(help);
 
 				loadScenario(scenarios[defaultScenario].name, defaultParams);
+				
+				//Circular Menu
+				var items = document.querySelectorAll('#lookFrom li');
+				console.log('value of items:::',items.length);
+
+				for(var i = 0, l = items.length; i < l; i++) {
+				  items[i].style.left = (50 - 35*Math.cos(-0.5 * Math.PI - 2*(0.6/l)*i*Math.PI)).toFixed(4) + "%";
+				  console.log('value of i:::',items[i]);
+				  items[i].style.top = (50 + 35*Math.sin(-0.5 * Math.PI - 2*(0.6/l)*i*Math.PI)).toFixed(4) + "%";
+				}
+
+				window.onload = function(){
+					document.querySelector('#lookFromButton').onclick = function(e) {
+   						e.preventDefault();
+   						document.querySelector('#lookFrom').classList.toggle('open');
+						}
+					}
 
 			}
 		};

@@ -131,7 +131,8 @@ define(
 			addDropdown : function(id, callback){
 				removeElement(id);
 				var dropdownContainer = getContainer(id).empty().addClass('dropdown');
-				var dropdownDisplay = $('<div class="display">').appendTo(dropdownContainer);
+				var dropdownDisplay = $('<div id="'+id+'Button" class="display">').appendTo(dropdownContainer);
+
 				var selector = this.selects[id] = {
 					input : $('<input id="'+id+'_inp">').on('change.odyssey', callback),
 					display: dropdownDisplay,
