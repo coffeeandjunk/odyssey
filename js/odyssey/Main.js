@@ -99,9 +99,9 @@ define(
 				}.bind(this));
 
 				
-				Gui.addBtn('share', Gui.SHARE_ID, function(){
-					Sharer.show();
-				}.bind(this));
+				// Gui.addBtn('share', Gui.SHARE_ID, function(){
+				// 	Sharer.show();
+				// }.bind(this));
 				
 
 				var help = '';

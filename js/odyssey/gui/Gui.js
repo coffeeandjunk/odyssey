@@ -37,50 +37,50 @@ define(
 
 		};
 
-		var setupHelp = function(){
-			var allHelpContents = $('.helpContent');
+		// var setupHelp = function(){
+		// 	var allHelpContents = $('.helpContent');
 
-			var hideContent = function(content){
-				var shown = content.filter('.shown');
-				var onDone = $.Deferred();
-				if(shown.length>0){
-					TweenMax.killTweensOf(shown);
-					TweenMax.to(shown, 0.5, {css:{height:1, opacity:0}, onComplete:function(){
-							shown.hide();
-							shown.removeClass('shown');
-							onDone.resolve();
-						}
-					});
-				} else {
-					onDone.resolve();
-				}
-				return onDone.promise();
-			};
-			var showContent = function(content){
-				TweenMax.killTweensOf(content);
-				TweenMax.from(content.show().css({height:'auto', opacity:1}), 0.5, {css:{height:1, opacity:0}});
-				content.addClass('shown');
-			};
+		// 	var hideContent = function(content){
+		// 		var shown = content.filter('.shown');
+		// 		var onDone = $.Deferred();
+		// 		if(shown.length>0){
+		// 			TweenMax.killTweensOf(shown);
+		// 			TweenMax.to(shown, 0.5, {css:{height:1, opacity:0}, onComplete:function(){
+		// 					shown.hide();
+		// 					shown.removeClass('shown');
+		// 					onDone.resolve();
+		// 				}
+		// 			});
+		// 		} else {
+		// 			onDone.resolve();
+		// 		}
+		// 		return onDone.promise();
+		// 	};
+		// 	var showContent = function(content){
+		// 		TweenMax.killTweensOf(content);
+		// 		TweenMax.from(content.show().css({height:'auto', opacity:1}), 0.5, {css:{height:1, opacity:0}});
+		// 		content.addClass('shown');
+		// 	};
 
-			$('.help').on('click.odyssey', function(e){
-				e.preventDefault();
-				var _self = $(this);
-				var content = _self.data('content');
-				if(!content){
-					content = allHelpContents.filter('#'+_self.data('for'));
-					_self.data('content', content);
-					content.find('.close').on('click.odyssey', function(){
-						hideContent(content);
-					});
-				}
+		// 	$('.help').on('click.odyssey', function(e){
+		// 		e.preventDefault();
+		// 		var _self = $(this);
+		// 		var content = _self.data('content');
+		// 		if(!content){
+		// 			content = allHelpContents.filter('#'+_self.data('for'));
+		// 			_self.data('content', content);
+		// 			content.find('.close').on('click.odyssey', function(){
+		// 				hideContent(content);
+		// 			});
+		// 		}
 
-				var onHidden = hideContent(allHelpContents);
-				onHidden.then(function(){
-					showContent(content)
-				});
-				return false;
-			});
-		};
+		// 		var onHidden = hideContent(allHelpContents);
+		// 		onHidden.then(function(){
+		// 			showContent(content)
+		// 		});
+		// 		return false;
+		// 	});
+		// };
 
 		var dateDisplay;
 		var date;
@@ -100,7 +100,7 @@ define(
 				this.root = $('#gui');
 				this.selects = {};
 
-				setupHelp();
+				// setupHelp();
 			},
 
 			addBtn : function(label, id, callback) {
@@ -220,11 +220,11 @@ define(
 			setDate : function(d){
 				date = d;
 				if(d){
-					// var dStr = d.toISOString();
-					var dStr = d.toString();
+					var dStr = d.toISOString();
+					// var dStr = d.toString();
 					ExportValues.setVal(this.DATE_ID, dStr);
 					dateDisplay.val(dStr);
-					dateDisplay.val($.datepicker.formatDate( $.datepicker.ATOM, d));
+					// dateDisplay.val($.datepicker.formatDate( $.datepicker.ATOM, d));
 				}
 			},
 

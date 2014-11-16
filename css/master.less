@@ -21,12 +21,12 @@
 
 
 @widgetBorderCol : #222;
-@inputBorderCol : #333;
-@inputBg : rgba(255, 255, 255, 0.1);
-@selectActiveBg : rgba(25, 25, 25, 0.9);
-@calendarBg : rgba(25, 25, 25, 0.95);
-@labelBg : rgba(25, 25, 25, 0.7);
-@txCol : #fff;
+@inputBorderCol : #222;
+@inputBg : rgba(25,27,25,0.5);
+@selectActiveBg : rgba(25, 27, 25, 0.5);
+@calendarBg : rgba(25, 27, 25, 0.5);
+@labelBg : rgba(25, 27, 25, 0.5);
+@txCol : #999999;
 @prelaodCol : #444;
 @labelLineCol : #333;
 
@@ -161,7 +161,7 @@ a{
 #credits{
 	position:absolute;
 	bottom: 10px;
-	right: 10px;
+	left: 10px;
 	cursor:pointer;
 }
 
@@ -208,45 +208,46 @@ a{
 
 }
 
-nav{
-	//display: none;
-	position:absolute;
-	z-index:500;
-	top:0;
-	left:0;
-	height: @menuH;
-	width: 100%;
+// nav{
+// 	//display: none;
+// 	position:absolute;
+// 	z-index:500;
+// 	top:0;
+// 	left:0;
+// 	height: @menuH;
+// 	width: 100%;
 	// background: #111;
 	// border-bottom:1px @widgetBorderCol solid;
 
-	.help{
-		//position:absolute;
-		top:-2px;
-		display:inline-block;
-		font-family:@entypo;
-		font-size:18px;
-		line-height:inherit;
-		height:18px;
-		width:18px;
-		margin-left:3px;
-		font-weight:normal;
-		cursor:pointer;
-		opacity:0.7;
-		&:hover{
-			opacity:1;
-		}
-	}
+// 	.help{
+// 		//position:absolute;
+// 		top:-2px;
+// 		display:inline-block;
+// 		font-family:@entypo;
+// 		font-size:18px;
+// 		line-height:inherit;
+// 		height:18px;
+// 		width:18px;
+// 		margin-left:3px;
+// 		font-weight:normal;
+// 		cursor:pointer;
+// 		opacity:0.7;
+// 		&:hover{
+// 			opacity:1;
+// 		}
+// 	}
 
 	#gui{
-		padding: 3px;
+		position: absolute;
+		padding: 10px 3px;
 		
 		.inputContainer{
 			position:relative;
 			min-height: 20px;
 
 			.hasDatepicker{
-				border-radius: 3px;
-				border: 1px #666 solid;
+				.border-radius(3px);
+				border: 1px #222 solid;
 				padding: 3px;
 			}
 		}
@@ -258,28 +259,33 @@ nav{
 			.display, li{
 				cursor:pointer;
 				overflow:hidden;
-				border-radius: 3px;
-				border: 1px #666 solid;
+				.border-radius(3px);
+				border: 1px #222 solid;
 				padding: 3px;
+				.no-select;
 			}
 			
 
 			ul{
 				list-style-type:none;
-				margin:0;
+				margin-top:10px;
 				padding:0;
 				font-weight:normal;
 				position:absolute;
-				display:none;
+				// display:none;
 				z-index:1000;
+				.no-select;
 
 				li{
 					margin:0;
-					padding: 2px 8px;
+					padding: 6px 8px;
 					//border-bottom: 1px black solid;
 					white-space: nowrap;
 					.inputBox(@selectActiveBg);
 					margin-top: 3px;
+					display: inline;
+					margin-right: 8px;
+					.no-select;
 
 					&.selected{
 						.inputBox();
@@ -311,30 +317,12 @@ nav{
 			float:left;
 			width:140px;
 			margin: 0px 8px;
+			.no-select;
 			& > div{
 				display:block;
 				font-weight:bold;
 			}
-
-			&#scenarioLabel{
-				width: 210px;
-			}
-			&#planetScaleLabel{
-				width: 120px;
-			}
-			&#deltaTLabel{
-				width: 120px;
-			}
-			&#startLabel{
-				width:auto;
-			}
-			&#shareLabel{
-				float:right;
-				width:auto;
-			}
-		}
-
-		
+		}	
 
 		input, button{
 			font-family:@formFont;
@@ -358,36 +346,111 @@ nav{
 				opacity: 0.7;
 			}
 		}
-
-		#shareWidget{
-			position:absolute;
-			top:@menuH + 5px;
-			right: 5px;
-			padding:12px;
-			background: rgba(0, 0, 0, 1);
-			border:1px @widgetBorderCol solid;
-			display:none;
-	
-			input#shareUrl{
-				width:250px;
-				margin:6px 0;
-			}
-
-			#social{
-				.clearfix();
-			}
-			#twitterShare{
-				float:left;
-			}
-		}
 	}
 
-}
+// }
 
+// .display {display: none !important;}
+
+#menu {
+
+	ul {opacity: 0.1;
+
+		&:hover	 {
+		opacity: 1;
+		.transition-duration(0.5s);
+		}
+	}
+	
+	.display {
+		font-size: 12px;
+		font-weight: bold;
+		padding: 6px 8px;
+		margin-top: 5px;
+		display: inline-flex;
+	}
+
+	.display, li{
+		overflow:hidden;
+		.border-radius(3px);
+		border: 1px #222 solid;
+		.no-select;
+	}
+
+	ul{
+	list-style-type:none;
+	margin-top:10px;
+	padding:0;
+	font-weight:normal;
+	// position:absolute;
+	// display:none;
+	z-index:1000;
+	.no-select;
+
+		li{
+			padding: 6px 8px;
+			.border-radius(3px);
+			//border-bottom: 1px black solid;
+			white-space: nowrap;
+			.inputBox(@selectActiveBg);
+			margin-top: 5px;
+			margin-right: 8px;
+			cursor: pointer;
+
+			&.selected{
+				.inputBox();
+			}
+
+			&:hover, &.selected{
+				// font-weight:bold;
+				color:#999;
+				opacity: 1;
+				.transition-duration(0.5s);
+			}
+
+			&.disabled{
+				font-weight:normal;
+				color:@txCol;
+				opacity:0.4;
+			}
+		}
+
+	}
+
+	#povLabel, #lookatLabel {
+		position: absolute;
+		top: 15%;
+	}
+
+	#povLabel {
+		left: 20px;
+	}
+
+	#lookatLabel {
+		right: 50px;
+	}
+
+	#scenarioLabel {
+		position: absolute;
+		left: 20px;
+		bottom: 20px;
+	}
+
+	#scenarioLabel li {
+		display: inline;
+		margin-right: 10px;
+	}
+
+	#scenario {
+		display: inline;
+		margin-left: 10px;
+	}
+}
+	
 .inputBox(@bg : @inputBg){
 	background: @bg;
 	border: 1px @inputBorderCol solid;
-	color:white;
+	color:#ADADAD;
 }
 
 .planetLabel{
@@ -531,6 +594,16 @@ nav{
 	pointer-events:none;
 }
 
+//No Select
+.no-select {
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 // Drop shadows
 .box-shadow(@shadow) {
   -webkit-box-shadow: @shadow;
@@ -623,5 +696,4 @@ nav{
     clear: both;
   }
 }
-
 
