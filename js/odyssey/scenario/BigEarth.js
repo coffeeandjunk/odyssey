@@ -16,7 +16,7 @@ define(
 
 		var cnf = {
 			name : 'BigEarth',
-			title : 'If Earth was 10000X its mass',
+			title : 'Heavy Earth',
 			commonBodies : [
 				'sun',
 				'mercury',
@@ -81,7 +81,7 @@ define(
 			defaultGuiSettings : { 
 				planetScale : 100
 			},
-			help : "This scenario shows what would happen if, instantaneously at this moment, Earth's mass grew 1000 times larger."
+			help : "This environment shows what would happen if suddenly Earth's mass increases by 1000 times."
 		};
 
 		return cnf;

@@ -36,7 +36,7 @@ define(
 				planetScale : 1,
 				usePhysics: true
 			},
-			help : "This scenario shows all the planets of the Solar System."
+			help : "This environment shows all the planets of the Solar System."
 		};
 
 		return cnf;

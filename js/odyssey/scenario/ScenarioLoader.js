@@ -9,7 +9,7 @@ define(
 		// ,'odyssey/scenario/Apollo'
 		,'odyssey/scenario/EarthMoon'
 		,'odyssey/scenario/EarthSun'
-		,'odyssey/scenario/EarthSunMoon'
+		// ,'odyssey/scenario/EarthSunMoon'
 		// ,'odyssey/scenario/ArtificialSatellites'
 		// ,'odyssey/scenario/JupiterMoon'
 		// ,'odyssey/scenario/NearEarthObject'

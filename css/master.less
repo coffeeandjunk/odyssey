@@ -11,7 +11,7 @@
 	font-style: normal;
 }
 
-@serif : 'Quattrocento', serif;
+@serif : 'Open Sans', serif;
 @sans:  helvetica, arial, sans-serif;
 @entypo : "EntypoRegular";
 
@@ -52,6 +52,12 @@ h1, h2{
 
 a{
 	color:#fff;
+	text-decoration: none;
+}
+
+p {
+	margin-top: -15px;
+	margin-bottom: 25px;
 }
 
 #preload{
@@ -219,27 +225,33 @@ a{
 	// background: #111;
 	// border-bottom:1px @widgetBorderCol solid;
 
-// 	.help{
-// 		//position:absolute;
-// 		top:-2px;
-// 		display:inline-block;
-// 		font-family:@entypo;
-// 		font-size:18px;
-// 		line-height:inherit;
-// 		height:18px;
-// 		width:18px;
-// 		margin-left:3px;
-// 		font-weight:normal;
-// 		cursor:pointer;
-// 		opacity:0.7;
-// 		&:hover{
-// 			opacity:1;
-// 		}
-// 	}
+	.help{
+		//position:absolute;
+		top:-2px;
+		display:inline-block;
+		font-family:@entypo;
+		font-size:18px;
+		line-height:inherit;
+		height:18px;
+		width:18px;
+		margin-left:3px;
+		font-weight:normal;
+		cursor:pointer;
+		opacity:0.7;
+		&:hover{
+			opacity:1;
+		}
+	}
 
 	#gui{
+		opacity: 0.3;
 		position: absolute;
 		padding: 10px 3px;
+
+		&:hover {
+			opacity: 1;
+			.transition-duration(0.5s);
+		}
 		
 		.inputContainer{
 			position:relative;
@@ -265,6 +277,11 @@ a{
 				.no-select;
 			}
 			
+			.display:hover {
+				ul {
+					opacity: 1;
+				}
+			}
 
 			ul{
 				list-style-type:none;
@@ -547,18 +564,18 @@ a{
 	top:@menuH;
 	left:0;
 	z-index:150;
-	background: rgba(0, 0, 0, 0.6);
+	background: rgba(0, 0, 0, 0.5);
 	width : 60%;
 	min-width:400px;
 	max-height: 80%;
 	padding: 30px 20%;
-	border-bottom: 1px #222 solid;
+	border-bottom: 1px #111 solid;
 	font-family:@textFont;
-	font-size: 16px;
+	font-size: 14px;
 	letter-spacing: 0.5px;
 	line-height: 1.8em;
 	color:#aaa;
-	text-align:justify;
+	text-align:left;
 	overflow-y:scroll;
 
 
