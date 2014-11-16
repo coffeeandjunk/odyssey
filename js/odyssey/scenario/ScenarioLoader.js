@@ -9,14 +9,13 @@ define(
 		// ,'odyssey/scenario/Apollo'
 		,'odyssey/scenario/EarthMoon'
 		,'odyssey/scenario/EarthSun'
-		,'odyssey/scenario/EarthSunMoon'
+		// ,'odyssey/scenario/EarthSunMoon'
 		// ,'odyssey/scenario/ArtificialSatellites'
 		// ,'odyssey/scenario/JupiterMoon'
 		// ,'odyssey/scenario/NearEarthObject'
 		,'odyssey/scenario/BigEarth'
 		//,'odyssey/scenario/MoonSOI'
 		,'odyssey/scenario/ScaledPlanets'
-		,'odyssey/scenario/ScaledDistance'
 	],
 	function($, ns, common){
 

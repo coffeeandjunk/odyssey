@@ -1,9 +1,8 @@
 <!doctype html>
-<html xmlns:fb="http://ogp.me/ns/fb#">
 	<head>	
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="author" content="Martin Vézina, La Grange">
+		<meta name="author" content="Abhishek Chakraborty">
 		<script data-main="./js/app.js" src="./js/require.js"></script>
 		<title>Odyssey</title>
 
@@ -12,7 +11,7 @@
 		<meta property="og:description" content="Solar Journey" />
 		<meta property="og:url" content=" " />
 
-		<link href='http://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
 		<link rel="stylesheet" type="text/css" href="css/master.css">
 	</head>
@@ -23,38 +22,32 @@
 					<div id="startCont" class="inputContainer"></div>
 				</label>
 				<label id="scenarioLabel">
-					<div>SCENARIO
-					<!-- <span class="help" data-for="helpScenario">&#59140;</span> -->
+					<div>Environment
+					<span class="help" data-for="helpScenario">&#59140;</span>
 					</div>
 					<div id="scenarioCont" class="inputContainer"></div>
 				</label>
 				<label id="dateLabel">
 					<div>DATE
-					<!-- <span class="help" data-for="helpDate">&#59140;</span> -->
+					<span class="help" data-for="helpDate">&#59140;</span>
 					</div>
 					<div id="dateCont" class="inputContainer"></div>
 				</label>
 				<label id="povLabel">
-					<div>POV
-					<!-- <span class="help" data-for="helpLookFrom">&#59140;</span> -->
+					<div>Looking from
+					<span class="help" data-for="helpLookFrom">&#59140;</span>
 					</div>
 					<div id="lookFromCont" class="inputContainer"></div>
 				</label>
 				<label id="lookatLabel">
-					<div>LOOK AT
-					<!-- <span class="help" data-for="helpLookAt">&#59140;</span> -->
+					<div>Looking at
+					<span class="help" data-for="helpLookAt">&#59140;</span>
 					</div>
 					<div id="lookAtCont" class="inputContainer"></div>
 				</label>
-<!-- 				<label id="planetScaleLabel">
-					<div>Planet Scale
-					<span class="valDisplay"></span>x <span class="help" data-for="helpScale">&#59140;</span>
-					</div>
-					<div id="planetScaleCont" class="inputContainer"></div>
-				</label> -->
 				<label id="deltaTLabel">
 					<div>SPEED
-					<!-- <span class="help" data-for="helpDeltaT">&#59140;</span> -->
+					<span class="help" data-for="helpDeltaT">&#59140;</span>
 					</div>
 					<div id="deltaTCont" class="inputContainer"></div>
 				</label>
@@ -62,40 +55,32 @@
 		</nav>
 
 
-<!-- 		<div class="helpContent" id="helpScenario">
+		<div class="helpContent" id="helpScenario">
 			<a class="close">&#10062;</a>
-			<h2>Scenario</h2>
-			<p>The available scenarios are in fact collections of numbers that describe celestial bodies and their position. These numbers are coming, for the most part, from Nasa's websites. Their accuracy is quite impressive, more than enough for the context of this simulation. The picture that you see on any given date represents what the real Solar System looked like on that date.</p>
+			<h2>Environment</h2>
+			<p>Each environment consists of a set of celestial bodies. They are described as follows: </p>
 		</div>
 		<div class="helpContent" id="helpDate">
 			<a class="close">&#10062;</a>
 			<h2>Date</h2>
-			<p>The <a href="http://en.wikipedia.org/wiki/Orbital_elements" target="_blank">orbital elements</a> of the planets are used to calculate their original position when picking a date. These calculations produce a very good approximation of the positions : you can compare the stars and constellations that you see in the background from other sources, provided that you place the point of view on The Earth.</p>
-			<p>Some scenarios are set to be animated by calculating positions from the orbital elements, but in some cases the velocity of each planet is derived from these calculations so that the positions are no longer calculated from the elements, but from the gravity that is acting between the different bodies. The calculation of these forces is also an approximation using a Quadratic integration, and its precision decays over time. This decay is more pronounced in some scenarios.</p>
-			<p>You can find on the internet the dates of celestial events, for example eclipses or lunar phases, and check if you can observe them in this simulation.</p>
+			<p>Change the date here to see the status of the Solar System on that date. This can be used to see various celestial events like Lunar Phases, Seasons of the Earth etc.</p>
 		</div>
 		<div class="helpContent" id="helpLookFrom">
 			<a class="close">&#10062;</a>
-			<h2>Point of view</h2>
-			<p>This option makes it possible to place the camera at the position of a planet of your choice, so you'd see the other planets from the point of view of the chosen one. From there you can zoom by scrolling.</p>
-			<p>The Free Camera is a camera that floats into space, and that you can move by scrolling and dragging. This camera always revolve around a point specified in the "look at" option field.</p>	
+			<h2>Point of View</h2>
+			<p>Choose a Planet here to observe the Solar System or other Planets from it's position. For example, select Earth from here and select Mars from "Look At" to see how Mars looks from Earth's point of view.</p>	
 		</div>
 		<div class="helpContent" id="helpLookAt">
 			<a class="close">&#10062;</a>
 			<h2>Look at</h2>
-			<p>You can make your selected camera look at a planet of your choice, so that it always will be centered in your viewport.</p>
-			<p>If you place the camera from the viewpoint of a planet and look at another one, the latter's path will be traced relative to the former's position. This feature is useful to observe the <a href="http://en.wikipedia.org/wiki/Apparent_retrograde_motion" target="_blank">apparent retrograde motion</a> of the planets relative to the Earth.</p>
-		</div>
-		<div class="helpContent" id="helpScale">
-			<a class="close">&#10062;</a>
-			<h2>Planet scale</h2>
-			<p>When the scale is at 1x, the planets sizes are in 1:1 scale to the size of the orbits, and of the universe. Since the distances in the Solar System are so huge, we can't even see the planets at this scale, so I made it possible to make the planets larger to see them more easily. I left the possibility to view them at their real size, because I feel it gives a better hint about the vastness of our Solar System.</p>
+			<p>This is used either to study any particular Planet like it's texture and colour, or it can be used to observe the Planet from the viewpoint of another Planet chosen from the "Look from" options.</p>
+			<p>For example, if Mars is selected fromhere and Earth is selected from "Look from" then Mars0's path will be traced relative to the former's position when the simulation is playing. This feature is useful to observe the <a href="http://en.wikipedia.org/wiki/Apparent_retrograde_motion" target="_blank">apparent retrograde motion</a> of the planets relative to eachother.</p>
 		</div>
 		<div class="helpContent" id="helpDeltaT">
 			<a class="close">&#10062;</a>
 			<h2>Speed</h2>
-			<p>Move the slider to change animation speed. Depending on the scenario, precision of positions can decay with increased speed.</p>
-		</div> -->
+			<p>The slider is used to change the movement of the Planets.</p>
+		</div>
 			
 		<div id="preload">
 			<div class="orbit"><div class="planet"></div></div>

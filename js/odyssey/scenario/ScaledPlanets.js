@@ -16,7 +16,7 @@ define(
 
     var cnf = {
       name : 'ScaledPlanets',
-      title : 'Planets scaled 3000 times',
+      title : 'Large Planets',
       commonBodies : [
         'sun',
         'mercury',
@@ -132,7 +132,7 @@ define(
       defaultGuiSettings : { 
         planetScale : 1
       },
-      help : "Scaled version of the planets"
+      help : "3000 times scaled version of the planets"
     };
 
     return cnf;
