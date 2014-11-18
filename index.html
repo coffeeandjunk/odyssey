@@ -21,17 +21,17 @@
 				<label id="startLabel">
 					<div id="startCont" class="inputContainer"></div>
 				</label>
-				<label id="deltaTLabel">
-					<div>SPEED
-					<span class="help" data-for="helpDeltaT">&#59140;</span>
-					</div>
-					<div id="deltaTCont" class="inputContainer"></div>
-				</label>
 				<label id="dateLabel">
 					<div>DATE
 					<span class="help" data-for="helpDate">&#59140;</span>
 					</div>
 					<div id="dateCont" class="inputContainer"></div>
+				</label>
+				<label id="deltaTLabel">
+					<div>SPEED
+					<span class="help" data-for="helpDeltaT">&#59140;</span>
+					</div>
+					<div id="deltaTCont" class="inputContainer"></div>
 				</label>
 			</div>
 		<!-- </nav> -->
@@ -82,7 +82,20 @@
 			<h2>Speed</h2>
 			<p>The slider is used to change the speed of movement of the Planets.</p>
 		</div>
-
+		<div class="helpContent" id="helpIntro">
+			<a class="close">&#10062;</a>
+			<h2>Introduction to Odyssey</h2>
+			<p>Odyssey is a virtual imitation of the Solar System. It is a teaching aid for school teachers to help them explain to students various concepts such as the structure of our Solar System, the relative size and position of the Planets, and phenomena like Lunar Phases, Seasons of Earth. Odyssey can also be used as a learnig aid tool students to tinker and play with it to test what they have learnt in class.</p>
+			<p>The first thing you see when you enter Odyssey is the current state of our Solar System right at this very moment. You can do the following to see it from various angles:
+			<ul>
+			<li>Use the Left Mouse Button (LMB) to tilt and change the viewing angle.
+			</li>
+			<li>Use the Mouse Wheel to zoom in and out.</li>
+			<li>Use the Right Mouse Button (RMB) to pan the view.</li>
+			</ul></p>
+			<p>Pressing the PLAY button on the top left side of the screen plays the scenario and the passage of time can be seen in the DATE section. Increase or decrease the SPEED to speed up or slow down time.</p>
+			<p>Each menu has its own help section. Clicking the HELP ICON beside them would give their details.</p>
+		</div>
 		<div id="preload">
 			<div class="orbit"><div class="planet"></div></div>
 			<div class="title">
@@ -90,5 +103,6 @@
 				<h2>solar system</h2>
 			</div>
 		</div>
+		<div id="intro" class="help" data-for="helpIntro">&#59140;</div>
 	</body>
 </html>

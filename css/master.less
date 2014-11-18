@@ -164,11 +164,12 @@ p {
 ::-webkit-resizer                { /* 7 */ }
 
 
-#credits{
+#intro{
 	position:absolute;
-	bottom: 10px;
-	left: 10px;
+	right: 40px;
 	cursor:pointer;
+	font-family: @entypo;
+	font-size: 36px;
 }
 
 .ui-datepicker{
@@ -211,7 +212,7 @@ p {
 
 
 #universe{
-
+	.no-select;
 }
 
 // nav{
@@ -247,6 +248,7 @@ p {
 		opacity: 0.3;
 		position: absolute;
 		padding: 10px 3px;
+		.no-select;
 
 		&:hover {
 			opacity: 1;
@@ -332,8 +334,8 @@ p {
 			position:relative;
 			display:block;
 			float:left;
-			width:140px;
-			margin: 0px 8px;
+			max-width:140px;
+			margin: 0px 60px;
 			.no-select;
 			& > div{
 				display:block;
@@ -370,6 +372,7 @@ p {
 // .display {display: none !important;}
 
 #menu {
+	.no-select;
 
 	ul {opacity: 0.1;
 
@@ -550,10 +553,10 @@ p {
 
 .button{
 
-	//font-family:@entypo;
+	// font-family:@entypo;
 	font-size:20px;
-	line-height:22px;
-	width:32px;
+	line-height:42px;
+	width:52px;
 }
 
 
@@ -564,7 +567,7 @@ p {
 	top:@menuH;
 	left:0;
 	z-index:150;
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.8);
 	width : 60%;
 	min-width:400px;
 	max-height: 80%;

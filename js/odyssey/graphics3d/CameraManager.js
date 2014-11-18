@@ -175,7 +175,7 @@ define(
 					at : Gui.addDropdown(Gui.LOOKAT_ID, toggleCamera)
 				};
 				
-				Gui.addOption(Gui.LOOKFROM_ID, 'Spaceship', 'orbital');
+				Gui.addOption(Gui.LOOKFROM_ID, 'Space', 'orbital');
 				Gui.addOption(Gui.LOOKAT_ID, 'Solar System', 'universe');
 
 				// if(ns.U.getBody().name == 'sun') {
