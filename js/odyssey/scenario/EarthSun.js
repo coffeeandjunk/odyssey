@@ -16,7 +16,7 @@ define(
 			defaultGuiSettings : { 
 				planetScale : 1
 			},
-			help : "Only the Sun and the Earth."
+			help : "Only the Sun and the Earth to study Season of Earth."
 		};
 
 		return system;

@@ -176,7 +176,7 @@ define(
 				};
 				
 				Gui.addOption(Gui.LOOKFROM_ID, 'Space', 'orbital');
-				Gui.addOption(Gui.LOOKAT_ID, 'Solar System', 'universe');
+				Gui.addOption(Gui.LOOKAT_ID, 'System', 'universe');
 
 				// if(ns.U.getBody().name == 'sun') {
 				// 	Gui.addOption(Gui.LOOKAT_ID, 'Night (away from the sun)', 'night');

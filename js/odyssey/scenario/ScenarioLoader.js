@@ -13,9 +13,10 @@ define(
 		// ,'odyssey/scenario/ArtificialSatellites'
 		// ,'odyssey/scenario/JupiterMoon'
 		// ,'odyssey/scenario/NearEarthObject'
-		,'odyssey/scenario/BigEarth'
 		//,'odyssey/scenario/MoonSOI'
-		,'odyssey/scenario/ScaledPlanets'
+		,'odyssey/scenario/ScaledPlanets1'
+		,'odyssey/scenario/ScaledPlanets2'
+		,'odyssey/scenario/BigEarth'
 	],
 	function($, ns, common){
 

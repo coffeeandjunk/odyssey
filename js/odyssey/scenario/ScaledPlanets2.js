@@ -15,8 +15,8 @@ define(
   function(ns, common) {
 
     var cnf = {
-      name : 'ScaledPlanets',
-      title : 'Large Planets',
+      name : 'ScaledPlanets 2',
+      title : 'Large Planets 2',
       commonBodies : [
         'sun',
         'mercury',
@@ -132,7 +132,7 @@ define(
       defaultGuiSettings : { 
         planetScale : 1
       },
-      help : "The size of the planets increased by 3000 times to make them visible."
+      help : "The size of the planets increased by 3000 times to make them visible. The orbits have been converted into concentric circles for visual comparision of the size of the Planets."
     };
 
     return cnf;

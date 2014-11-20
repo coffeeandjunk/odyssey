@@ -15,7 +15,7 @@ define(
 						defaultGuiSettings : { 
 				planetScale : 100
 			},
-			help : "Only the Earth and its moon."
+			help : "Only the Earth and its Moon to study the Phases of Moon."
 		};
 
 		return system;
