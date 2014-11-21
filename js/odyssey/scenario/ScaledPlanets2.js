@@ -51,7 +51,7 @@ define(
           radius: 6051 * 3000,
           orbit : {
           base : {a : 25 * ns.AU ,  e : 0, i: 0, l : 0, lp : 0, o : 0},
-          cy : {a : 0 * ns.AU ,  e : 0, i: 0, l : 10, lp : 0, o : 0}
+          cy : {a : 0 * ns.AU ,  e : 0, i: 0, l : 15, lp : 0, o : 0}
           }
         },
         earth:{
@@ -60,7 +60,7 @@ define(
           radius: 3443.9307 * ns.NM_TO_KM * 3000,
           orbit : {
           base : {a : 30 * ns.AU ,  e : 0, i: 0, l : 0, lp : 0, o : 0},
-          cy : {a : 0 * ns.AU ,  e : 0, i: 0, l : 10, lp : 0, o : 0}
+          cy : {a : 0 * ns.AU ,  e : 0, i: 0, l : 20, lp : 0, o : 0}
           }
         },
         mars:{
@@ -69,7 +69,7 @@ define(
           radius: 3376 * 3000,
           orbit : {
           base : {a : 35 * ns.AU ,  e : 0, i: 0, l : 0, lp : 0, o : 0},
-          cy : {a : 0 * ns.AU ,  e : 0, i: 0, l : 10, lp : 0, o : 0}
+          cy : {a : 0 * ns.AU ,  e : 0, i: 0, l : 25, lp : 0, o : 0}
           }
         },
         jupiter:{
@@ -79,7 +79,7 @@ define(
           radius: 71492 * 3000,
           orbit : {
           base : {a : 40 * ns.AU ,  e : 0, i: 0, l : 0, lp : 0, o : 0},
-          cy : {a : 0 * ns.AU ,  e : 0, i: 0, l : 10, lp : 0, o : 0}
+          cy : {a : 0 * ns.AU ,  e : 0, i: 0, l : 40, lp : 0, o : 0}
           }
         },
         saturn:{
@@ -93,7 +93,7 @@ define(
           },
           orbit : {
           base : {a : 45 * ns.AU ,  e : 0, i: 0, l : 0, lp : 0, o : 0},
-          cy : {a : 0 * ns.AU ,  e : 0, i: 0, l : 10, lp : 0, o : 0}
+          cy : {a : 0 * ns.AU ,  e : 0, i: 0, l : 60, lp : 0, o : 0}
           }
         },
         uranus:{
@@ -102,7 +102,7 @@ define(
           radius: 25559 * 3000,
           orbit : {
           base : {a : 50 * ns.AU ,  e : 0, i: 0, l : 0, lp : 0, o : 0},
-          cy : {a : 0 * ns.AU ,  e : 0, i: 0, l : 10, lp : 0, o : 0}
+          cy : {a : 0 * ns.AU ,  e : 0, i: 0, l : 75, lp : 0, o : 0}
           }
         },
         neptune:{
@@ -111,7 +111,7 @@ define(
           radius: 24764 * 3000,
           orbit : {
           base : {a : 55 * ns.AU ,  e : 0, i: 0, l : 0, lp : 0, o : 0},
-          cy : {a : 0 * ns.AU ,  e : 0, i: 0, l : 10, lp : 0, o : 0}
+          cy : {a : 0 * ns.AU ,  e : 0, i: 0, l : 85, lp : 0, o : 0}
           }
         },
         pluto:{
@@ -119,7 +119,7 @@ define(
           traceRelativeTo : 'universe',
           orbit : {
           base : {a : 60 * ns.AU ,  e : 0, i: 0, l : 0, lp : 0, o : 0},
-          cy : {a : 0 * ns.AU ,  e : 0, i: 0, l : 10, lp : 0, o : 0}
+          cy : {a : 0 * ns.AU ,  e : 0, i: 0, l : 90, lp : 0, o : 0}
           },
           radius: 1153 * 3000
         }
