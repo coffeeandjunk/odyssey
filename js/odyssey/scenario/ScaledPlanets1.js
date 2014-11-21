@@ -16,7 +16,7 @@ define(
 
     var cnf = {
       name : 'ScaledPlanets 1',
-      title : 'Large Planets 1',
+      title : 'बड़े ग्रह १',
       commonBodies : [
         'sun',
         'mercury',

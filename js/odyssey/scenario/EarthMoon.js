@@ -9,7 +9,7 @@ define(
 		
 		var system =  {
 			name : 'EarthMoon',
-			title : 'Lunar Phases',
+			title : 'चंद्र चरण',
 			commonBodies : ['earth', 'moon'],
 			secondsPerTick : {min: 3600/2, max: 3600 * 5, initial:3600},
 						defaultGuiSettings : { 

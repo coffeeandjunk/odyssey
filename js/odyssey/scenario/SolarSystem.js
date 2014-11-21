@@ -16,7 +16,7 @@ define(
 
 		var cnf = {
 			name : 'SolarSystem',
-			title : 'Solar System',
+			title : 'सौर मंडल',
 			commonBodies : [
 				'sun',
 				'mercury',

@@ -11,13 +11,14 @@
 	font-style: normal;
 }
 
-@serif : 'Open Sans', serif;
-@sans:  helvetica, arial, sans-serif;
+@serif : serif;
+@sans:  'Ek Mukta', helvetica, arial, sans-serif;
 @entypo : "EntypoRegular";
+@open: 'Open Sans';
 
 @formFont : @sans;
-@titleFont : @serif;
-@textFont : @serif;
+@titleFont : @sans;
+@textFont : @open;
 
 
 @widgetBorderCol : #222;
@@ -36,7 +37,7 @@ body{
 	margin:0;
 	padding:0;
 	font-family:@formFont;
-	font-size:10px;
+	font-size:14px;
 	color: @txCol;
 	background: radial-gradient(#06062E 5%, #04041F 15%, #010108 60%);
 	overflow:hidden;
@@ -46,7 +47,7 @@ body{
 
 
 h1, h2{
-	font-family:@titleFont;
+	font-family:@open;
 	font-weight:normal;
 }
 
@@ -64,6 +65,7 @@ p {
 	width:100%;
 	height:100%;
 	background: #323232;
+	background: radial-gradient(#4F4F4F 5%, #323232 95%);
 	position:absolute;
 	top:0;
 	left:0;
@@ -74,9 +76,9 @@ p {
 		border-bottom: 1px #151d37 solid;/**/
 		color: @prelaodCol;
 		position:relative;
-		top:50%;
+		top:40%;
 		height:90px;
-		width:150px;
+		width:600px;
 		margin:0 auto;
 		margin-top:-45px;
 		text-align:center;
@@ -90,13 +92,14 @@ p {
 		}
 
 		h1{
-			font-size: 30px;
-			letter-spacing: 10px;
-			text-transform:uppercase;
+			font-size: 90px;
+			// letter-spacing: 10px;
+			// text-transform:uppercase;
 			margin:16px 0;
 			// .transition-duration(2s);
-			color: #ED699C;
-			// text-shadow: 0 0 2px #555;
+			color: #EEEEEE;
+			// text-shadow: 0 5px #333;
+			text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);
 
 		}
 
@@ -111,7 +114,7 @@ p {
 	}
 
 	.orbit{
-		@orbitSz : 400px;
+		@orbitSz : 500px;
 		@planetSz: 10px;
 		width:@orbitSz;
 		height:@orbitSz;
@@ -297,14 +300,12 @@ p {
 				.no-select;
 
 				li{
-					margin:0;
 					padding: 6px 8px;
 					//border-bottom: 1px black solid;
 					white-space: nowrap;
 					.inputBox(@selectActiveBg);
 					margin-top: 3px;
 					display: inline;
-					margin-right: 8px;
 					.no-select;
 
 					&.selected{
@@ -340,13 +341,13 @@ p {
 			.no-select;
 			& > div{
 				display:block;
-				font-weight:bold;
+				// font-weight:bold;
 			}
 		}	
 
 		input, button{
 			font-family:@formFont;
-			font-size:11px;
+			font-size:12px;
 		}
 
 		input, .display{
@@ -384,8 +385,8 @@ p {
 	}
 	
 	.display {
-		font-size: 12px;
-		font-weight: bold;
+		font-size: 16px;
+		// font-weight: bold;
 		padding: 6px 8px;
 		margin-top: 5px;
 		display: inline-flex;
@@ -409,7 +410,9 @@ p {
 	.no-select;
 
 		li{
-			padding: 6px 8px;
+			max-width: 50px;
+			padding: 2px 8px;
+			font-size: 14px;
 			.border-radius(3px);
 			//border-bottom: 1px black solid;
 			white-space: nowrap;
@@ -476,11 +479,13 @@ p {
 
 .planetLabel{
 	.unselectable();
+	font-family: @sans;
+	letter-spacing: 1px;
 	position:absolute;
-	color:#fff;
+	color:#B2B2B2;
 	// background:@labelBg;
 	padding:3px;
-	font-size:9px;
+	font-size:14px;
 	left: 24px;
 	white-space: nowrap;
 	z-index:50;
@@ -556,7 +561,7 @@ p {
 
 	// font-family:@entypo;
 	font-size:20px;
-	line-height:42px;
+	line-height:45px;
 	width:52px;
 }
 

@@ -11,7 +11,7 @@ define(
 	function($, ns, MoonRealOrbit){
 		var common = {
 			sun : {
-				title : 'The Sun',
+				title : 'सूर्य',
 				mass : 1.9891e30,
 				radius : 6.96342e5,
 				color : '#ffff00',
@@ -22,7 +22,7 @@ define(
 				}
 			},
 			mercury : {
-				title : 'Mercury',
+				title : 'बुध',
 				mass : 3.3022e23,
 				radius:2439,
 				color : '#588a7b',
@@ -33,7 +33,7 @@ define(
 				}
 			},
 			venus : {
-				title : 'Venus',
+				title : 'शुक्र',
 				mass : 4.868e24,
 				radius : 6051,
 				color : '#fda700',
@@ -44,7 +44,7 @@ define(
 				}
 			},
 			earth : {
-				title : 'The Earth',
+				title : 'पृथ्वी',
 				mass : 5.9736e24,
 				radius : 3443.9307 * ns.NM_TO_KM,
 				color : '#1F7CDA',
@@ -60,7 +60,7 @@ define(
 				}
 			},
 			mars : {
-				title : 'Mars',
+				title : 'मंगल',
 				mass : 6.4185e23,
 				radius : 3376,
 				color : '#ff3300',
@@ -73,7 +73,7 @@ define(
 			}
 			,
 			jupiter : {
-				title : 'Jupiter',
+				title : 'बृहस्पति',
 				mass : 1.8986e27,
 				radius : 71492,
 				color : '#ff9932',
@@ -84,7 +84,7 @@ define(
 				}
 			},
 			saturn : {
-				title : 'Saturn',
+				title : 'शनि',
 				mass : 5.6846e26,
 				radius : 58232,
 				color : '#ffcc99',
@@ -101,7 +101,7 @@ define(
 				}
 			},
 			uranus : {
-				title : 'Uranus',
+				title : 'यूरेनस',
 				mass : 8.6810e25,
 				radius : 25559,
 				color : '#99ccff',
@@ -112,7 +112,7 @@ define(
 				}
 			},
 			neptune : {
-				title : 'Neptune',
+				title : 'नेपच्यून',
 				mass : 1.0243e26,
 				radius : 24764,
 				color : '#3299ff',
@@ -123,7 +123,7 @@ define(
 				}
 			},
 			pluto : {
-				title : 'Pluto',
+				title : 'प्लूटो',
 				mass : 1.305e22+1.52e21,
 				radius : 1153,
 				color : '#aaaaaa',
@@ -133,18 +133,18 @@ define(
 					cy : {a : -0.00031596 * ns.AU ,  e : 0.00005170, i: 0.00004818, l : 145.20780515, lp : -0.04062942, o : -0.01183482}
 				}
 			},
-			halley : {
-				title : 'Halley\'s Comet',
-				mass : 2.2e14,
-				radius : 50,
-				color : '#999999',
-				orbit : {
-					base : {a : 17.83414429 * ns.AU ,  e : 0.967142908, i: 162.262691, M : 360 * (438393600 / (75.1 * ns.YEAR * ns.DAY)), w : 111.332485, o : 58.420081},
-					day : {a : 0 ,  e : 0, i: 0, M : (360 / (75.1 * 365.25) ), w : 0, o : 0}
-				}
-			},
+			// halley : {
+			// 	title : 'Halley\'s Comet',
+			// 	mass : 2.2e14,
+			// 	radius : 50,
+			// 	color : '#999999',
+			// 	orbit : {
+			// 		base : {a : 17.83414429 * ns.AU ,  e : 0.967142908, i: 162.262691, M : 360 * (438393600 / (75.1 * ns.YEAR * ns.DAY)), w : 111.332485, o : 58.420081},
+			// 		day : {a : 0 ,  e : 0, i: 0, M : (360 / (75.1 * 365.25) ), w : 0, o : 0}
+			// 	}
+			// },
 			moon : {
-				title : 'The Moon',
+				title : 'चांद',
 				mass : 7.3477e22,
 				radius : 1738.1,
 				color : "#ffffff",

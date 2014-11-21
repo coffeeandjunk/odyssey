@@ -16,7 +16,7 @@ define(
 
 		var cnf = {
 			name : 'BigEarth',
-			title : 'Heavy Earth',
+			title : 'भारी पृथ्वी',
 			commonBodies : [
 				'sun',
 				'mercury',

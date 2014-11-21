@@ -175,8 +175,8 @@ define(
 					at : Gui.addDropdown(Gui.LOOKAT_ID, toggleCamera)
 				};
 				
-				Gui.addOption(Gui.LOOKFROM_ID, 'Space', 'orbital');
-				Gui.addOption(Gui.LOOKAT_ID, 'System', 'universe');
+				Gui.addOption(Gui.LOOKFROM_ID, 'अंतरिक्ष', 'orbital');
+				Gui.addOption(Gui.LOOKAT_ID, 'सिस्टम', 'universe');
 
 				// if(ns.U.getBody().name == 'sun') {
 				// 	Gui.addOption(Gui.LOOKAT_ID, 'Night (away from the sun)', 'night');
