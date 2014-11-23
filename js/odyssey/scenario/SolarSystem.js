@@ -22,7 +22,7 @@ define(
 				'mercury',
 				'venus',
 				'earth',
-				//'moon',
+				// 'moon',
 				'mars',
 				'jupiter',
 				'saturn',
@@ -36,7 +36,7 @@ define(
 				planetScale : 1,
 				usePhysics: true
 			},
-			help : "This environment shows all the planets of the Solar System."
+			help : "ये एनवायरनमेंट सौर मंडल की सारी ग्रहों को दिखाना है।"
 		};
 
 		return cnf;

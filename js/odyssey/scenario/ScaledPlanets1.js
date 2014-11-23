@@ -96,7 +96,7 @@ define(
       defaultGuiSettings : { 
         planetScale : 1
       },
-      help : "The size of the planets increased by 3000 times to make them visible and enable visual comparision of their sizes in their actual positions. The Sun's size has been kept the same so that the Planets may reside within their actual Orbits."
+      help : "ग्रहों का आकार (सिवाए सूर्य के) ३००० गुना बढ़ाया गया हैं ताकि उन्हें आसानी से देखा जा सके। "
     };
 
     return cnf;

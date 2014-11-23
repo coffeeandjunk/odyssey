@@ -40,17 +40,17 @@ define(
 				// Hamre kaam ka nahi
 				// if(ns.capture) this.screenshot = Object.create(Screenshot).init(renderer);
 
-				//renderer.shadowMapEnabled = true;
+				renderer.shadowMapEnabled = true;
 				renderer.setSize(this.width, this.height);
 
 				var light = new THREE.AmbientLight( 0x202020 );
 				this.root.add( light );/**/
 
 				//disable while not using stats
-				if(!stats) {
-					stats = new Stats();
-					$('body').append( stats.domElement );
-				}
+				// if(!stats) {
+				// 	stats = new Stats();
+				// 	$('body').append( stats.domElement );
+				// }
 
 				this.container.append(renderer.domElement);
 				
@@ -62,7 +62,7 @@ define(
 				// 	this.draw();
 				// }.bind(this));
 
-				//this.drawAxis();
+				// this.drawAxis();
 				CameraManager.init(this, this.width/this.height, scenario.fov, this.stageSize, this.container);
 				OrbitLinesManager.init(this.root);
 				TracerManager.init(this.root);
@@ -142,8 +142,8 @@ define(
 				var camPos = CameraManager.getCamera().position.clone();
 				camPos.applyMatrix4(CameraManager.getCamera().matrixWorld);
 				Labels.draw(camPos, radFov);
-				/**/
-				stats.update();
+
+				// stats.update();
 			},
 
 			//camera might move and/or look at a different point depending on bodies movements

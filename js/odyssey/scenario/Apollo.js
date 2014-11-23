@@ -9,7 +9,7 @@ define(
 	], 
 	function(ns, common, nasaNumbers, Labels) {
 		var g = window.location.search.match(/apollo=([0-9]+)/);
-		var apolloNumber = (g && g[1]) || '8';
+		var apolloNumber = (g && g[1]) || '11';
 		var earthRadius = common.earth.radius;
 		var earthTilt = common.earth.tilt;
 		var apolloEarthOrbit = nasaNumbers.get('earth', 'Apollo'+apolloNumber);

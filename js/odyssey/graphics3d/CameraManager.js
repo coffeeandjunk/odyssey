@@ -17,7 +17,7 @@ define(
 		'use strict';
 
 		var DEFAULT_FOV = 45;
-		var MAX_FOV = 360;
+		var MAX_FOV = 900;
 		var ORBITAL_CAMERA_TYPE = 'orbital';
 		var POV_CAMERA_TYPE = 'pov';
 

@@ -15,7 +15,7 @@ define(
 						defaultGuiSettings : { 
 				planetScale : 100
 			},
-			help : "Only the Earth and its Moon to study the Phases of Moon."
+			help : "इसमें सिर्फ पृथ्वी तथा चन्द्रमा शामिल हैं चन्द्र चरण का अध्ययन करने के लिए।"
 		};
 
 		return system;

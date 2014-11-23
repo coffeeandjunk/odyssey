@@ -13,7 +13,7 @@ define(
 		// ,'odyssey/scenario/ArtificialSatellites'
 		// ,'odyssey/scenario/JupiterMoon'
 		// ,'odyssey/scenario/NearEarthObject'
-		//,'odyssey/scenario/MoonSOI'
+		// ,'odyssey/scenario/MoonSOI'
 		,'odyssey/scenario/ScaledPlanets1'
 		,'odyssey/scenario/ScaledPlanets2'
 		,'odyssey/scenario/BigEarth'

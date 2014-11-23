@@ -46,7 +46,7 @@ define(
 					},
 					relativeTo : 'moon',
 					forceTrace : true,
-					traceRelativeTo : 'earth'/**/
+					traceRelativeTo : 'earth'
 				},
 				outside : {
 					mass : 100,
@@ -73,7 +73,7 @@ define(
 					},
 					relativeTo : 'moon',
 					forceTrace : true,
-					traceRelativeTo : 'earth'/**/
+					traceRelativeTo : 'earth'
 				},
 				limit : {
 					mass : 100,
@@ -100,7 +100,7 @@ define(
 					},
 					relativeTo : 'moon',
 					forceTrace : true,
-					traceRelativeTo : 'earth'/**/
+					traceRelativeTo : 'earth'
 				}
 			}
 		};

@@ -34,7 +34,7 @@ define(
 			defaultGuiSettings : { 
 				planetScale : 10
 			},
-			help:"Includes all the planets from Mercury to Mars, plus the Earth's moon."
+			help:"इसमें बुध से मंगल ग्रह, तथा पृथ्वी का चंद्रमा शामिल है।"
 		};
 
 		return cnf;

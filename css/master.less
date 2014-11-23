@@ -18,7 +18,7 @@
 
 @formFont : @sans;
 @titleFont : @sans;
-@textFont : @open;
+@textFont : @sans;
 
 
 @widgetBorderCol : #222;
@@ -85,10 +85,12 @@ p {
 
 		h1, h2{
 			cursor:default;
+			font-weight: normal;
 		}
 
 		h3{
 			color: orange;
+			font-weight: normal;
 		}
 
 		h1{
@@ -387,7 +389,7 @@ p {
 	.display {
 		font-size: 16px;
 		// font-weight: bold;
-		padding: 6px 8px;
+		padding: 0 8px;
 		margin-top: 5px;
 		display: inline-flex;
 	}
@@ -404,13 +406,13 @@ p {
 	margin-top:10px;
 	padding:0;
 	font-weight:normal;
-	// position:absolute;
+	position:absolute;
 	// display:none;
 	z-index:1000;
 	.no-select;
 
 		li{
-			max-width: 50px;
+			// max-width: 50px;
 			padding: 2px 8px;
 			font-size: 14px;
 			.border-radius(3px);
@@ -418,7 +420,6 @@ p {
 			white-space: nowrap;
 			.inputBox(@selectActiveBg);
 			margin-top: 5px;
-			margin-right: 8px;
 			cursor: pointer;
 
 			&.selected{
@@ -561,7 +562,7 @@ p {
 
 	// font-family:@entypo;
 	font-size:20px;
-	line-height:45px;
+	line-height:46px;
 	width:52px;
 }
 

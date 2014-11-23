@@ -81,7 +81,7 @@ define(
 			defaultGuiSettings : { 
 				planetScale : 100
 			},
-			help : "This environment shows what would happen if suddenly Earth's mass increases by 1000 times."
+			help : "इस एनवायरनमेंट में अगर अचानक पृथ्वी के द्रव्यमान १०००० गुना बढ़ जाती है तो क्या होगा पता चलता है।"
 		};
 
 		return cnf;

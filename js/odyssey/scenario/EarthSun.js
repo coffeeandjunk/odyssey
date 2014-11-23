@@ -16,7 +16,7 @@ define(
 			defaultGuiSettings : { 
 				planetScale : 1
 			},
-			help : "Only the Sun and the Earth to study Season of Earth."
+			help : "इसमें सिर्फ पृथ्वी तथा सूर्य शामिल  हैं पृथ्वी के मौसम का अध्ययन करने के लिए।"
 		};
 
 		return system;

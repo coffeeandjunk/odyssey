@@ -132,7 +132,7 @@ define(
       defaultGuiSettings : { 
         planetScale : 1
       },
-      help : "The size of the planets increased by 3000 times to make them visible. The orbits have been converted into concentric circles for visual comparision of the size of the Planets."
+      help : "ग्रहों का आकार ३००० गुना बढ़ाया गया हैं ताकि उन्हें आसानी से देखा जा सके।"
     };
 
     return cnf;
